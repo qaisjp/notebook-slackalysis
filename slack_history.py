@@ -124,7 +124,7 @@ def getUserMap(slack):
         continue
     if user['id'] in allowed_users:
         print user
-        userIdNameMap[user['id']] = {'name': user['name'], 'real_name': user['real_name']}
+        userIdNameMap[user['id']] = user
   print("found {0} users ".format(len(users)))
   return userIdNameMap
 
